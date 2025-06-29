@@ -1,0 +1,29 @@
+MiscWhatever - V0.2.5 - Draft 272 lol
+
+Program/command names are case-insensitive
+
+COMMANDS (shell commands that are not part of any specific utility)
+	HELP
+		Displays this text
+
+	DEBUG
+		Toggles debug mode
+
+	DEBUGLOG
+		Toggles debug logging
+
+	EXIT
+		Exits the program
+
+	SUPERDUPEREXIT
+		Exits the program via segmentation fault (warning: may cause strange behavior)
+
+	VERSION
+		Displays the version of MiscWhatever
+
+PROGRAMS (utilities)
+	VOCABEXTRACT
+		Extracts every unique word from an input
+
+	MEMORYLEAK
+		Intentionally leaks a certain amount of bytes of memory
