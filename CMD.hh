@@ -1,8 +1,9 @@
-#pragma once
+#ifndef CMD_Header
+#define CMD_Header
 
 class CMD {
-public:
-	static void VocabExtract_Main();
-private:
-	static void SuperSecretFunction(); // what does this do? who knows!
+    public:
+    static void VocabExtract_Main();
 };
+
+#endif

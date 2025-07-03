@@ -13,7 +13,7 @@ bool isAllowedChar(char c) { // Checks if a character is an alphabetic character
 std::vector<std::string> parseToWords(std::string& input) { // Tokenizes the input string into words
 	std::vector<std::string> words;
 	std::string wordtemp;
-	Funczz::Lowercaseify(input);
+	Funczz::lowercaseify(input);
 	for (char c : input) { // Range-based for loop to iterate through characters
 		if (isAllowedChar(c)) {
 			wordtemp += c; // Append character to current word
