@@ -5,5 +5,8 @@ set(SOURCE_FILES
     main.cpp
     General.cpp
     VocabExtract.cpp
+    RandomSongGen.cpp
+    text.cpp
+    ItAdd.cpp
 )
 add_executable(MiscWhatever ${SOURCE_FILES})
