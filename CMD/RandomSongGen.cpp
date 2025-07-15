@@ -6,7 +6,7 @@
 #include <random>
 #include <vector>
 
-void CMD::RandomSongGen_Main() {
+void CMD::CMD_run::RandomSongGen_Main() {
     std::vector<std::string> output;
     std::string outputstring;
     std::string lines[] = {

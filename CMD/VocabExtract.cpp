@@ -49,7 +49,7 @@ std::string parseWords(const std::vector<std::string>& input) { // Deduplicates 
 	return result;
 }
 
-void CMD::VocabExtract_Main() { // Main function for the VocabExtract tool
+void CMD::CMD_run::VocabExtract_Main() { // Main function for the VocabExtract tool
 	std::cout << "Welcome to VocabExtract, the MiscWhatever word deduplication tool!\ninput your text here:\n\n>> ";
 	std::string Input;
 	std::getline(std::cin >> std::ws, Input); // Read input from the user

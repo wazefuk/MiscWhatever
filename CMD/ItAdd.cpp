@@ -3,7 +3,7 @@
 
 char num[10] = {'0','1','2','3','4','5','6','7','8','9',};
 
-void CMD::ItAdd_Main() {
+void CMD::CMD_run::ItAdd_Main() {
     std::cout << "Welcome to ItAdd! (unfortunately)\n\nPut in some numbers:\n";
     std::string input;
     std::cin >> input;
@@ -15,5 +15,5 @@ void CMD::ItAdd_Main() {
             }
         }
     }
-    std::cout << std::endl << output;
+    std::cout << "\n" << output << "\n";
 }
