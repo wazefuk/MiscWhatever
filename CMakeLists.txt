@@ -8,5 +8,6 @@ set(SOURCE_FILES
     CMD/ItAdd.cpp
     CMD/RandomSongGen.cpp
     CMD/VocabExtract.cpp
+    CMD/MysteryFunction.cpp
 )
 add_executable(MiscWhatever ${SOURCE_FILES})

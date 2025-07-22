@@ -34,6 +34,9 @@ int CMDParse(std::string input) {
     } else if (input == "superduperexit") {
         int *ptr = nullptr;
         *ptr = 42;
+    } else if (input == "mysteryfunction") {
+        CMD::CMD_run::MysteryFunction();
+        return 8;
     }
     return -1; // -1 for "command didn't come with a return value"
 }
@@ -41,11 +44,8 @@ int CMDParse(std::string input) {
 int main() {
     Varzz::Debug = false;
     Varzz::DebugLog = false;
-
     std::string CMDin;
-
     std::cout << "Welcome to MiscWhatever!\nThis is a neat little toy CLI full of both helpful and unhelpful tools...\n(note: \"help\" for a list of commands)\n\n";
-
     while (true) {
         std::cout << "A:\\MiscWhatever> ";
         std::getline(std::cin, CMDin);
