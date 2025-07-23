@@ -2,10 +2,16 @@ cmake_minimum_required(VERSION 4.0)
 project(MiscWhatever CXX)
 
 # Resources
-file(COPY ${CMAKE_SOURCE_DIR}/CMD/AAAAAA.wav DESTINATION ${CMAKE_BINARY_DIR})
-file(COPY ${CMAKE_SOURCE_DIR}/.gitignore DESTINATION ${CMAKE_BINARY_DIR})
+set(RESOURCES
+    CMD/AAAAAA.wav
+    .gitignore
+)
 
-# Source fles
+foreach(file IN LISTS RESOURCES)
+    configure_file(${PROJECT_SOURCE_DIR}/${file} ${CMAKE_BINARY_DIR}/${file} COPYONLY)
+endforeach()
+
+# Source files
 set(SOURCE_FILES
 
     # Main files
