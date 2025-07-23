@@ -1,5 +1,4 @@
-#include "General.hh"
-#include "CMD.hh"
+#include "lib/CMD.hh"
 
 #include <iostream>
 #include <string>

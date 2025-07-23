@@ -1,5 +1,5 @@
-#include "General.hh"
-#include "CMD.hh"
+#include "lib/General.hh"
+#include "lib/CMD.hh"
 
 #include <vector>
 #include <string>

@@ -20,6 +20,7 @@ namespace Funczz { // Reusable utility functions (side note: I want this to be a
     );
     void printFile(std::string path); // prints a file to the terminal
     std::string lowercaseify(std::string& input); // returns the input with every character turned lowercase
+    int randrange(int lowerbound, int upperbound); // Generates a random integer in a provided range
 };
 
 #endif

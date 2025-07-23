@@ -6,7 +6,8 @@ file(COPY ${CMAKE_SOURCE_DIR}/CMD/AAAAAA.wav DESTINATION ${CMAKE_BINARY_DIR})
 set(SOURCE_FILES
     main.cpp
     placeholderfunc.cpp
-    General.cpp
+
+    lib/General.cpp
 
     CMD/ItAdd.cpp
     CMD/RandomSongGen.cpp

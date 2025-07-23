@@ -1,5 +1,5 @@
 #include <iostream>
-#include "CMD.hh"
+#include "lib/CMD.hh"
 
 void msg(std::string cmdname) {
     std::cout

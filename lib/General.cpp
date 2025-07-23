@@ -1,10 +1,14 @@
-#include "General.hh"
+#include "lib/General.hh"
 
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <random>
 
 namespace Funczz {
+
+std::random_device rd;
+std::mt19937 gen(rd());
 
 void DebugLog(std::string input, bool forceShow, bool isErr, bool shouldLog) {
     if (Varzz::Debug || forceShow) {
@@ -44,6 +48,11 @@ std::string lowercaseify(std::string& input) {
         result.push_back(std::tolower(input[i]));
     }
     return result;
+}
+
+int randrange(int lowerbound, int upperbound) {
+    std::uniform_int_distribution<> distr(lowerbound, upperbound);
+    return distr(gen);
 }
 
 }
