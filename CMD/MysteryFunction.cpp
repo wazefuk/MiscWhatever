@@ -3,12 +3,20 @@
 #include <thread>
 #include <chrono>
 #include <future>
+#include <windows.h>
+#include <mmsystem.h>
+
+#pragma comment(lib, "winmm.lib")
 
 #include "General.hh"
 #include "CMD.hh"
 
 std::random_device rd;
 std::mt19937 gen(rd());
+
+void playMysterySound() {
+    PlaySound(TEXT("AAAAAA.wav"), NULL, SND_FILENAME | SND_ASYNC);
+}
 
 int randrange(int lowerbound, int upperbound) {
     std::uniform_int_distribution<> distr(lowerbound, upperbound);
@@ -17,6 +25,7 @@ int randrange(int lowerbound, int upperbound) {
 
 void CMD::CMD_run::MysteryFunction() {
     std::cout << "MYSTERY FUNCTION HAS BEEN RUN LOLLLLLLLLLLLLL L BOZO LMAO\n";
+    playMysterySound();
     while (true) {
         std::this_thread::sleep_for(std::chrono::milliseconds(randrange(0,16)));
         switch (randrange(0,3)) {
