@@ -37,6 +37,8 @@ int CMDParse(std::string input) {
     } else if (input == "mysteryfunction") {
         CMD::CMD_run::MysteryFunction();
         return 8;
+    } else {
+        std::cout << "\aUnknown command\n\n";
     }
     return -1; // -1 for "command didn't come with a return value"
 }
