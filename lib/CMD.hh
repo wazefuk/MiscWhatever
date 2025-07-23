@@ -4,8 +4,7 @@
 #include <string>
 
 namespace CMD { // A namespace full of pretty much everything to do with commands
-    class CMD_run { // runner functions for commands
-        public:
+    struct CMD_run { // runner functions for commands
         static void VocabExtract_Main();
         static void RandomSongGen_Main();
         static void ItAdd_Main();
