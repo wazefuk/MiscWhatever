@@ -22,6 +22,8 @@ namespace CMD { // A namespace full of pretty much everything to do with command
         "SHOWTHEGITIGNORE - Prints the projects .gitignore (only works if you're running this in the repository folder)",
         "CMDHISTORY - Shows every command you've run",
         "SUPERDUPEREXIT - Exits the program via segfault (may cause unintended behavior)",
+        "DEBUG - Toggles debug mode",
+        "DEBUGLOG - Toggles the logging of debug messages"
     };
 }
 
