@@ -8,18 +8,22 @@ set(RESOURCES
 )
 
 foreach(file IN LISTS RESOURCES)
-    configure_file(${PROJECT_SOURCE_DIR}/${file} ${CMAKE_BINARY_DIR}/${file} COPYONLY)
+    configure_file(
+        ${PROJECT_SOURCE_DIR}/${file}
+        ${CMAKE_BINARY_DIR}/${file}
+        COPYONLY
+    )
 endforeach()
 
 # Source files
 set(SOURCE_FILES
 
+    # Library implementations
+    lib/General.cpp
+
     # Main files
     main.cpp
     placeholderfunc.cpp
-
-    # Library implementation
-    lib/General.cpp
 
     # Commands
     CMD/ItAdd.cpp
