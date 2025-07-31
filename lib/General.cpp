@@ -11,7 +11,6 @@ std::random_device rd;
 std::mt19937 gen(rd());
 
 void printFile(std::string path) {
-    DebugLog("printFile run",false,false,true);
     std::ifstream File(path);
     std::string Line;
     if (!File) {
