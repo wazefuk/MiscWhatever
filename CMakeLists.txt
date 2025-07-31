@@ -27,6 +27,7 @@ set(SOURCE_FILES
     CMD/VocabExtract.cpp
     CMD/MysteryFunction.cpp
     CMD/ShowTheGitignore.cpp
+    CMD/CMDHistory.cpp
 )
 
 # Create the executables and link some libraries

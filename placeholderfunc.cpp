@@ -12,7 +12,3 @@ void msg(std::string cmdname) {
 void CMD::CMD_run::AHiddenCommandNotShownInHelp_Main() {
     msg("AHiddenCommandNotShownInHelp_Main");
 }
-
-void CMD::CMD_run::CMDHistory_Main() {
-    msg("CMDHistory_Main");
-}
