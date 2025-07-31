@@ -7,7 +7,6 @@
 #include "lib/General.hh"
 
 void CMD::CMD_run::RandomSongGen_Main() {
-    Funczz::DebugLog("Initalizing RandomSongGen",false,false,true);
     std::vector<std::string> output;
     std::string outputstring;
     std::string lines[] = {
@@ -30,14 +29,11 @@ void CMD::CMD_run::RandomSongGen_Main() {
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<> distr(0, 15);
-    Funczz::DebugLog("Done initializing RandomSongGen",false,false,true);
     int num = distr(gen);
     for (int i = 0; i < num*2; i++) {
-        Funczz::DebugLog("Adding line...",false,false,true);
         num = distr(gen);
         output.push_back(lines[num]);
     }
-    Funczz::DebugLog("Song parsing over, converting to string",false,false,true);
     for (int i = 0; i < output.size(); i++) {
         outputstring.append(output[i] + '\n');
     }

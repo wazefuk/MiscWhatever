@@ -10,12 +10,9 @@ void CMD::CMD_run::ItAdd_Main() {
     std::string input;
     std::cin >> input;
     unsigned long long output = 0;
-    Funczz::DebugLog("ItAdd loop run",false,false,true);
     for (int i = 0; i < input.length(); i++) {
-        Funczz::DebugLog("New ItAdd iteration",false,false,true);
         for (int j = 0; j <= 10; j++) {
             if (input[i] == num[j]) {
-                Funczz::DebugLog("Match " + std::to_string(j) + " found",false,false,true);
                 output += j;
             }
         }
