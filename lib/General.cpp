@@ -5,6 +5,10 @@
 #include <string>
 #include <random>
 
+namespace Varzz {
+    std::vector<std::string> CMDHistory;
+}
+
 namespace Funczz {
 
 std::random_device rd;

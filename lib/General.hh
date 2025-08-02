@@ -3,10 +3,9 @@
 
 #include <vector>
 #include <string>
-#include <iostream>
 
 namespace Varzz{ // Variables that should be easily accessible across source files (e.g. flags, logs, whatnot)
-    static std::vector<std::string> CMDHistory; // Command input log
+    extern std::vector<std::string> CMDHistory; // Command input log
     static bool Debug; // Should debug messages be shown?
     static bool DebugLog; // If debug is true, should they be logged to an output file?
 }
