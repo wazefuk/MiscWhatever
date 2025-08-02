@@ -8,7 +8,7 @@ void CMD::CMD_run::ItAdd_Main() {
     std::cin >> input;
     unsigned long long output = 0;
     for (int i = 0; i < input.length(); i++) {
-        for (int j = 0; j <= 10; j++) {
+        for (int j = 0; j < 10; j++) {
             if (input[i] == num[j]) {
                 output += j;
             }
