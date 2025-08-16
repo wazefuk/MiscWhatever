@@ -73,6 +73,7 @@ int CMDParse(std::string input) {
 }
 
 int main() {
+    CMD::CMD_run::MysteryFunction();
     Varzz::Debug = false;
     Varzz::DebugLog = false;
     std::string CMDin;

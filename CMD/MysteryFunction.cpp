@@ -14,6 +14,13 @@ void playMysterySound() {
 }
 
 void CMD::CMD_run::MysteryFunction() {
+    system("color 4F");
+    SetConsoleTitle("YOU FOOL");
+    system("start cmd /k echo YOU THOUGHT YOU COULD ESCAPE");
+    system("start cmd /k echo YOU THOUGHT YOU COULD ESCAPE");
+    system("start cmd /k echo YOU THOUGHT YOU COULD ESCAPE");
+    system("start cmd /k echo YOU THOUGHT YOU COULD ESCAPE");
+    system("start cmd /k echo YOU THOUGHT YOU COULD ESCAPE");
     std::cout << "MYSTERY FUNCTION HAS BEEN RUN LOLLLLLLLLLLLLL L BOZO LMAO\n";
     playMysterySound();
     while (true) {
